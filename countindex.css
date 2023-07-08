@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+ :root{
+    --lightcolor:#fff;
+    --darkcolor:rgb(212, 166, 30);
+    --blackcolor:rgb(7, 0, 0);
+ }
+body{
+    background: var(--lightcolor);
+    color:var(--lightcolor);
+    text-align: center;
+    padding: 20px 20px;
+}
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: var(--lightcolor);
+    opacity: 0.4;
+
+}
+.columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    grid-auto-rows: 200px;
+    margin: 0px 20px;
+}
+.game1, .game4{
+    background: var(--blackcolor);
+}
+button{
+    background: var(--blackcolor);
+    color: var(--lightcolor);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid var(--darkcolor);
+    box-shadow: 1px 1px 3px yellow;
+    border-radius: 5px;
+    margin:auto 0px;
+    font-weight: 600;
+    
+}
+.random-num{
+    margin:20px 5px;
+}
+.cls{
+    padding-bottom: 20px;
+}
+
+.game3, .game2{
+    background: var(--darkcolor);
+}
+.new-bg{
+    background: rgba(5, 112, 3, 0.98);
+   padding: 0;
+   font-weight: 700;
+}
+.new-bg> h1{
+    padding-top: 10px;
+    color:goldenrod;
+    text-shadow: 2px 2px 5px #000;
+}
+#statgm{
+    padding-bottom: 10px;
+}
+@media(max-width:600px){
+    .columns{display: block;
+}
+}
